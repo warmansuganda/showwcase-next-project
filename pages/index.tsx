@@ -1,9 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
+import PlainLayout from 'layouts/PlainLayout';
+import Button from 'components/Button';
+
 function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <PlainLayout>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -16,6 +19,8 @@ function Home() {
             Next.js!
           </a>
         </h1>
+
+        <Button>Get Started</Button>
 
         <p className="mt-3 text-2xl">
           Get started by editing{' '}
@@ -78,7 +83,7 @@ function Home() {
           <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
         </a>
       </footer>
-    </div>
+    </PlainLayout>
   );
 }
 
