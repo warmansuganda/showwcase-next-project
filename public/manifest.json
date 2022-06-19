@@ -1,6 +1,7 @@
 {
   "name": "Showwcase Next Project",
   "short_name": "SNP",
+  "description": "This is showwcase next project",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#007bff",
