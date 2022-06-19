@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Image from 'next/image';
 
 import PlainLayout from 'layouts/PlainLayout';
@@ -7,11 +6,6 @@ import Button from 'components/Button';
 function Home() {
   return (
     <PlainLayout>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
@@ -20,14 +14,9 @@ function Home() {
           </a>
         </h1>
 
-        <Button>Get Started</Button>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+        <div className="mt-10">
+          <Button>Get Started</Button>
+        </div>
 
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           <a
